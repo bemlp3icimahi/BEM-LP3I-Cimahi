@@ -3,14 +3,6 @@
 *::after {
   box-sizing: border-box;
 }
-html,
-body {
-  padding: 0;
-  margin: 0;
-  background-color: #eee;
-  color: #fff;
-  font-family: sans-serif;
-}
 .slide {
   text-decoration: none;
   color: inherit;
