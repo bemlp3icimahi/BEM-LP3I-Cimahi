@@ -133,6 +133,9 @@
 }
 
 @media (width < 768px) {
+  body {
+    overflow: hidden;
+  }
   #scroller .item {
     width: 400px;
     margin: auto;
