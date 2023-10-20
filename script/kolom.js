@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  fetch("kolom.html")
+  fetch("kolom1.html")
     .then((response) => response.text())
     .then((kolomHTML) => {
       document.getElementById("kolom-section").innerHTML = kolomHTML;
