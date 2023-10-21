@@ -16,7 +16,7 @@
 
 .about-section .content-column .text {
   position: relative;
-  color: #777777;
+  color: #000000;
   font-size: 15px;
   line-height: 2em;
   margin-bottom: 40px;
@@ -160,4 +160,67 @@
   width: 40px;
   height: 1px;
   background-color: #bbbbbb;
+}
+
+@media (width < 1080px) {
+  .about-section .content-column .inner-column {
+    position: relative;
+    padding-top: 10px;
+  }
+
+  .about-section .image-column .inner-column:after {
+    position: absolute;
+    content: "";
+    right: 0px;
+    top: 0px;
+    left: 40px;
+    bottom: 100px;
+    padding-bottom: 300px;
+    z-index: 0;
+    border: 2px solid #d7a449;
+  }
+}
+
+@media (width < 768px) {
+  .about-section .image-column .inner-column::after {
+    position: absolute;
+    margin-left: 10vw;
+    content: "";
+    width: 80%;
+    height: 120%;
+    z-index: 0;
+    border: 2px solid rgb(215, 164, 73);
+    padding-bottom: 30em;
+    opacity: 0.2;
+  }
+
+  .image > img {
+    opacity: 0.2;
+    width: 70%;
+    margin-left: 10vw;
+    height: 550px;
+  }
+
+  .about-section .content-column .inner-column {
+    margin-bottom: 10em;
+  }
+
+  .about-section {
+    position: relative;
+  }
+
+  .about-section .image-column {
+    position: absolute;
+    z-index: -1;
+    right: 0.1em;
+  }
+  .about-section .image-column .inner-column .image {
+    position: absolute;
+    right: 5em;
+  }
+
+  .about-section .image-column .inner-column .image .overlay-box {
+    position: absolute;
+    margin-left: 25vw;
+  }
 }

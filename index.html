@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="style/kolom2.css" />
+    <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <link rel="stylesheet" href="style/kolom1.css" />
 
     <title>Document</title>
   </head>
@@ -13,82 +18,68 @@
     <!--  -->
     <div id="hero-section"></div>
     <!--  -->
-    <!-- <div id="kolom2-section"></div> -->
-    <section>
-      <div id="scroller">
-        <div class="nav">
-          <a class="prev" id="prev">&laquo;</a>
-          <a class="next" id="next">&raquo;</a>
-        </div>
+    <div class="container-fluid mt-3 w-80">
+      <div class="owl-carousel center">
         <a class="item" href="#">
           <div class="image-container">
-            <img src="1.jpg" style="width: 100%" />
-            <div class="overlay">
-              <div class="overlay-content">Text 1</div>
-            </div>
-          </div>
-        </a>
-        <a class="item" href="#">
-          <div class="image-container">
-            <img src="1.jpg" style="width: 100%" />
-            <div class="overlay">
-              <div class="overlay-content">Text 2</div>
-            </div>
-          </div>
-        </a>
-        <a class="item" href="#">
-          <div class="image-container">
-            <img src="1.jpg" style="width: 100%" />
-            <div class="overlay">
-              <div class="overlay-content">Text 3</div>
-            </div>
-          </div>
-        </a>
-        <a class="item" href="#">
-          <div class="image-container">
-            <img src="1.jpg" style="width: 100%" />
-            <div class="overlay">
-              <div class="overlay-content">Text 4</div>
-            </div>
-          </div>
-        </a>
-        <a class="item" href="#">
-          <div class="image-container">
-            <img src="1.jpg" style="width: 100%" />
-            <div class="overlay">
-              <div class="overlay-content">Text 5</div>
-            </div>
-          </div>
-        </a>
-        <a class="item" href="#">
-          <div class="image-container">
-            <img src="1.jpg" style="width: 100%" />
-            <div class="overlay">
-              <div class="overlay-content">Text 6</div>
-            </div>
-          </div>
-        </a>
-        <a class="item" href="#">
-          <div class="image-container">
-            <img src="1.jpg" style="width: 100%" />
+            <img src="1.jpg" />
             <div class="overlay">
               <div class="overlay-content">Text 7</div>
             </div>
           </div>
         </a>
+        <a class="item" href="#">
+          <div class="image-container">
+            <img src="1.jpg" />
+            <div class="overlay">
+              <div class="overlay-content">Text 7</div>
+            </div>
+          </div>
+        </a>
+        <a class="item" href="#">
+          <div class="image-container">
+            <img src="1.jpg" />
+            <div class="overlay">
+              <div class="overlay-content">Text 7</div>
+            </div>
+          </div>
+        </a>
+        <!-- Add more carousel items as needed -->
       </div>
-    </section>
+    </div>
     <!--  -->
     <div id="about-section"></div>
     <!--  -->
     <div id="anggota-section"></div>
     <!--  -->
+    <div id="kolom1-section"></div>
     <!--  -->
+
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script type="text/javascript" src="script/navbar.js"></script>
     <script type="text/javascript" src="script/hero-section.js"></script>
-    <script type="text/javascript" src="script/kolom2.js"></script>
     <script type="text/javascript" src="script/about.js"></script>
     <script type="text/javascript" src="script/anggota.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel.center").owlCarousel({
+          center: true,
+          loop: true,
+          margin: 10,
+          responsive: {
+            0: {
+              items: 2, // Ketika lebar layar kurang dari 768px, tampilkan 2 item
+            },
+            768: {
+              items: 3, // Ketika lebar layar lebih besar atau sama dengan 768px, tampilkan 3 item
+            },
+          },
+        });
+      });
+    </script>
   </body>
 </html>
