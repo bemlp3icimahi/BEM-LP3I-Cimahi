@@ -31,9 +31,13 @@ div.overlay-content {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-@media (width < 768px) {
+@media (width < 600px) {
   .owl-carousel .owl-item img {
     display: block;
     width: 100%;
+  }
+
+  .container-carousel {
+    margin-top: 0;
   }
 }

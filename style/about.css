@@ -137,6 +137,7 @@
   .about-section .content-column .inner-column {
     position: relative;
     padding-top: 10px;
+    margin-left: 3vw;
   }
 
   .about-section .image-column .inner-column:after {
@@ -153,27 +154,27 @@
 }
 
 @media (width < 768px) {
+  .about-section {
+    position: relative;
+    padding: 2em 0px;
+  }
+
   .about-section .image-column .inner-column::after {
     position: absolute;
     margin-left: 10vw;
     content: "";
-    width: 70%;
+    width: 75%;
     height: 120%;
     z-index: 0;
     border: 2px solid rgb(215, 164, 73);
     padding-bottom: 30em;
-    opacity: 0.2;
+    opacity: 0.4;
   }
 
   .image > img {
-    opacity: 0.2;
-    width: 70%;
-    margin-left: 10vw;
+    opacity: 0.4;
+    margin-left: 4vw;
     height: 550px;
-  }
-
-  .about-section .content-column .inner-column {
-    margin-bottom: 10em;
   }
 
   .about-section {

@@ -66,14 +66,15 @@ a {
   border-radius: 50%;
   text-decoration: none;
 }
-@media screen and (max-width: 990px) {
+@media (width < 990px) {
   .our-team {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .col-md-3 {
+@media (min-width: 576px) {
+  .col-sm-3 {
+    flex: 0 0 auto;
     width: 50%;
   }
 }
