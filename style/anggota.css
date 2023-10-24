@@ -1,10 +1,18 @@
 a {
   text-decoration: none;
 }
+
+.our-team,
+.our-team img,
+.our-team .content {
+  border-radius: 5px;
+}
+
 .our-team {
   text-align: center;
   position: relative;
   color: #fff;
+  box-shadow: 0px 0px 5px #000000;
 }
 .our-team img {
   width: 100%;
@@ -19,8 +27,8 @@ a {
   top: 0;
   text-align: center;
   padding-top: 45%;
-  transform: perspective(400px) rotateX(-90deg);
-  transform-origin: center top 0;
+  transform: perspective(400px) rotateX(90deg);
+  transform-origin: center bottom 0;
   transition: all 0.5s ease 0s;
   opacity: 0;
 }
@@ -28,6 +36,7 @@ a {
 .our-team.active .content {
   opacity: 1;
   transform: perspective(400px) rotateX(0deg);
+  border-radius: 5px;
 }
 .our-team .content .title {
   margin: 0 0 10px;
@@ -50,17 +59,42 @@ a {
 }
 .our-team .social li a {
   display: block;
-  color: #fff;
   font-size: 2em;
   height: 40px;
   width: 40px;
   line-height: 40px;
   border-radius: 0;
-  background-color: #f32248;
+  background-color: #ffffff;
   margin-right: 5px;
   transition: all 0.5s ease 0s;
   position: relative;
 }
+
+.fa-facebook {
+  color: blue;
+}
+.fa-twitter {
+  color: rgb(255, 42, 0);
+}
+.fa-linkedin {
+  color: rgb(255, 0, 153);
+}
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-linkedin:hover {
+  color: rgb(255, 255, 255);
+}
+
+.our-team .social li a.fa-facebook:hover {
+  background-color: blue;
+}
+.our-team .social li a.fa-twitter:hover {
+  background-color: orange;
+}
+.our-team .social li a.fa-linkedin:hover {
+  background-color: orchid;
+}
+
 .our-team .social li a:hover,
 .our-team.active .social li a {
   border-radius: 50%;
