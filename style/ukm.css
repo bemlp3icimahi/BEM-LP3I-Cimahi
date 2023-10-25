@@ -4,9 +4,8 @@
   transform-origin: left;
 }
 
-#exampleModal .modal-dialog {
-  max-width: unset;
-  width: auto;
+.modal::-webkit-scrollbar {
+  display: hidden;
 }
 
 .card {
