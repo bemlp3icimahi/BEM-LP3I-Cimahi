@@ -4,10 +4,6 @@
   transform-origin: left;
 }
 
-.modal::-webkit-scrollbar {
-  display: hidden;
-}
-
 .card {
   box-shadow: 0px 0px 5px #000000;
 }
@@ -18,9 +14,10 @@
 }
 
 #click.card:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
   transition: transform 0.3s ease;
   cursor: pointer;
+  z-index: 10;
 }
 
 @keyframes scaleIn {

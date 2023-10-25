@@ -1,9 +1,11 @@
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 4em;
 }
 
 :root a {
   text-decoration: none;
+  font-weight: bold;
 }
 
 #navbar-section {
