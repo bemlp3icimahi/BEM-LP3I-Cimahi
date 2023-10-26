@@ -1,0 +1,103 @@
+<html>
+  <head lang="en">
+    <meta charset="UTF-8" />
+
+    <!-- Bootstrap CSS-->
+    <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Style.css -->
+    <link rel="stylesheet" href="style/contact.css" />
+
+    <title>Contact</title>
+  </head>
+  <body>
+    <section id="contact" class="mb-5">
+      <h2 class="text-center mt-5">CONTACT US</h2>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="bg-light shadow p-3">
+              <form
+                id="contact-form"
+                class="form-horizontal text-center"
+                role="form">
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      class="form-control bg-light border"
+                      id="name"
+                      placeholder="NAME"
+                      name="name"
+                      value=""
+                      required />
+                  </div>
+                </div>
+
+                <textarea
+                  class="form-control mt-1 bg-light border"
+                  rows="12"
+                  placeholder="MESSAGE"
+                  name="message"
+                  style="resize: none"
+                  required></textarea>
+
+                <button
+                  class="form-control btn btn-primary send-button"
+                  id="submit"
+                  type="submit"
+                  value="SEND">
+                  <div class="alt-send-button">
+                    <i class="fa fa-paper-plane"></i
+                    ><span class="send-text">SEND</span>
+                  </div>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="direct-contact-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15844.602770083697!2d107.5470311!3d-6.8725409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e58c6fd4aee1%3A0x2e90dd3f6fb585d2!2sPoliteknik%20LP3I%20Kampus%20Cimahi!5e0!3m2!1sid!2sid!4v1698290258427!5m2!1sid!2sid"
+                class="border border-primary"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen></iframe>
+
+              <hr />
+
+              <div class="contact">
+                <i class="fa fa-map-marker"
+                  ><span class="contact-text place">
+                    Jl. Terusan No.14 A, Cimahi, Kec. Cimahi Tengah, Kota
+                    Cimahi, Jawa Barat 40525</span
+                  ></i
+                >
+
+                <i class="fa fa-envelope">
+                  <span class="contact-text gmail">
+                    <a href="mailto:bemlp3icimahi@gmail.com">
+                      bemlp3icimahi@gmail.com
+                    </a>
+                  </span>
+                </i>
+              </div>
+
+              <hr />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
