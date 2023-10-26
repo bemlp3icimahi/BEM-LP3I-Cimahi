@@ -1,3 +1,26 @@
+#contact {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: var(--primaryColor);
+}
+
+input,
+textarea,
+span {
+  font-family: "Ubuntu", sans-serif;
+  background-color: transparent;
+}
+
+.contact-form {
+  background-color: var(--secondaryColor);
+}
+
+button {
+  background-color: var(--quertieryColor);
+}
+
 .send-button {
   margin-top: 15px;
   height: 34px;
@@ -8,7 +31,7 @@
 .send-text {
   display: block;
   margin-top: 10px;
-  font: 700 12px "Lato", sans-serif;
+  font: 700 12px "Ubuntu", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -16,20 +39,25 @@
   transform: translate3d(0px, -29px, 0px);
 }
 
+.alt-send-button {
+  height: 34px;
+  transition: all 0.2s ease-in-out;
+}
+
 /* Location, Phone, Email Section */
 
 .contact {
   line-height: 4;
-  color: #aaa;
+  color: var(--quertiaryColor);
 }
 
 .contact-text {
   letter-spacing: 1.9px;
-  color: #bbb;
+  color: var(--quertiaryColor);
 }
 
 .contact-text a {
-  color: #bbb;
+  color: var(--quertiaryColor);
   text-decoration: none;
   transition-duration: 0.2s;
 }
@@ -44,10 +72,6 @@ hr {
 
 /* Begin Media Queries*/
 @media (max-width: 1080px) {
-  .container {
-    flex-direction: column;
-  }
-
   .col-md-6 {
     width: 100%;
   }

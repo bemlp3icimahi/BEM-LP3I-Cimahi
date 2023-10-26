@@ -3,6 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
+
 .slide {
   text-decoration: none;
   color: inherit;
@@ -21,6 +22,7 @@
   margin: 0 auto;
   line-height: 75vh;
   font-size: 10vmin;
+  font-family: "Ubuntu", sans-serif;
 }
 .slide {
   float: left;

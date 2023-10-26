@@ -1,6 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+body {
+  background-color: var(--primaryColor);
+}
+
+.sub-title {
+  color: var(--quertiaryColor);
+}
+
+.text::first-letter {
+  initial-letter: 2;
+  margin-right: 0.3em;
+}
+
 .about-section {
   position: relative;
   padding: 5em 0px;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .about-section .content-column {
@@ -16,7 +32,7 @@
 
 .about-section .content-column .text {
   position: relative;
-  color: #000000;
+  color: var(--fontColor);
   font-size: 15px;
   line-height: 2em;
   margin-bottom: 40px;
@@ -24,7 +40,7 @@
 
 .about-section .content-column .email {
   position: relative;
-  color: #252525;
+  color: var(--quertiaryColor);
   font-weight: 700;
   margin-bottom: 50px;
 }
@@ -48,7 +64,7 @@
   left: 40px;
   bottom: 100px;
   z-index: 0;
-  border: 2px solid #d7a449;
+  border: 2px solid var(--quertiaryColor);
 }
 
 .about-section .image-column .inner-column .image {
@@ -89,33 +105,31 @@
   background: url(https://i.ibb.co/DKn55Qz/pattern-1.jpg) repeat;
 }
 .about-section .btn-style-three:hover {
-  color: #ffffff;
-  background: #d7a449;
+  color: var(--primaryColor);
+  background: var(--quertiaryColor);
 }
 .about-section .btn-style-three {
   position: relative;
   line-height: 24px;
-  color: #252525;
+  color: var(--quertiaryColor);
   font-size: 15px;
   font-weight: 700;
   background: none;
   display: inline-block;
   padding: 11px 40px;
-  background-color: #ffffff;
   text-transform: capitalize;
-  border: 2px solid #d7a449;
-  font-family: "Arimo", sans-serif;
+  border: 2px solid var(--quertiaryColor);
+  font-family: "Ubuntu", sans-serif;
 }
 .sec-title2 {
   color: #fff;
 }
 .sec-title {
   position: relative;
-  padding-bottom: 40px;
 }
 .sec-title .title {
   position: relative;
-  color: #d7a449;
+  color: var(--quertiaryColor);
   font-size: 18px;
   font-weight: 700;
   padding-right: 50px;
@@ -130,7 +144,6 @@
   bottom: 7px;
   width: 40px;
   height: 1px;
-  background-color: #bbbbbb;
 }
 
 @media (width < 1080px) {
@@ -149,7 +162,7 @@
     bottom: 100px;
     padding-bottom: 300px;
     z-index: 0;
-    border: 2px solid #d7a449;
+    border: 2px solid var(--quertiaryColor);
   }
 }
 
@@ -166,7 +179,7 @@
     width: 75%;
     height: 120%;
     z-index: 0;
-    border: 2px solid rgb(215, 164, 73);
+    border: 2px solid var(--quertiaryColor);
     padding-bottom: 30em;
     opacity: 0.4;
   }
