@@ -173,7 +173,7 @@ body {
     position: absolute;
     margin-left: 10vw;
     content: "";
-    width: 75%;
+    width: 70%;
     height: 100%;
     z-index: 0;
     border: 2px solid var(--quertiaryColor);
@@ -228,6 +228,17 @@ body {
     margin-left: 10vw;
     content: "";
     width: 90%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.2;
+  }
+}
+
+@media (width <= 380px) {
+  .about-section .image-column .inner-column .image img {
+    margin-left: 5vw;
+    content: "";
+    width: 120%;
     height: 100%;
     z-index: 0;
     opacity: 0.2;
