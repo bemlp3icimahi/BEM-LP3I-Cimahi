@@ -6,6 +6,24 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
+h2 {
+  display: flex;
+  flex-direction: row;
+}
+h2:before,
+h2:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+h2:before {
+  margin-right: 10px;
+}
+h2:after {
+  margin-left: 10px;
+}
+
 .text-center {
   color: var(--quertiaryColor);
 }
@@ -19,7 +37,8 @@ body {
 .our-team {
   text-align: center;
   position: relative;
-  color: #fff;
+  color: var(--quertiaryColor);
+  font-weight: bold;
   box-shadow: 0px 0px 5px #000000;
 }
 .our-team img {
@@ -27,7 +46,7 @@ body {
   height: 100%;
 }
 .our-team .content {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(81, 85, 126, 0.8);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -71,43 +90,22 @@ body {
   height: 40px;
   width: 40px;
   line-height: 40px;
-  border-radius: 0;
-  background-color: #ffffff;
+  border-radius: 10px;
+  background-color: var(--quertiaryColor);
+  color: var(--primaryColor);
   margin-right: 5px;
   transition: all 0.5s ease 0s;
   position: relative;
 }
 
-.fa-facebook {
-  color: blue;
-}
-.fa-twitter {
-  color: rgb(255, 42, 0);
-}
-.fa-linkedin {
-  color: rgb(255, 0, 153);
-}
-.fa-facebook:hover,
-.fa-twitter:hover,
-.fa-linkedin:hover {
-  color: rgb(255, 255, 255);
-}
-
-.our-team .social li a.fa-facebook:hover {
-  background-color: blue;
-}
-.our-team .social li a.fa-twitter:hover {
-  background-color: orange;
-}
-.our-team .social li a.fa-linkedin:hover {
-  background-color: orchid;
-}
-
 .our-team .social li a:hover,
-.our-team.active .social li a {
+.our-team.active .social li a:hover {
   border-radius: 50%;
   text-decoration: none;
+  background-color: var(--primaryColor);
+  color: var(--quertiaryColor);
 }
+
 @media (width < 990px) {
   .our-team {
     margin-bottom: 30px;

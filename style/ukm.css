@@ -18,11 +18,13 @@
 
 .card-img-overlay {
   display: none;
+  color: var(--fontColor);
+  font-weight: bold;
 }
 
 .card:hover .card-img-overlay {
   display: block;
-  background-color: rgba(255, 255, 255, 0.7);
+  background: rgba(81, 85, 126, 0.8);
   animation: slideIn 0.5s;
 }
 

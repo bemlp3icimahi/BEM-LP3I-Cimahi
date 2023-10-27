@@ -7,6 +7,13 @@
 .slide {
   text-decoration: none;
   color: inherit;
+  float: left;
+  height: 100%;
+  width: 0;
+  transition: width 0.3s linear;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .slide-btn {
   display: none;
@@ -23,19 +30,14 @@
   line-height: 75vh;
   font-size: 10vmin;
   font-family: "Ubuntu", sans-serif;
+  color: var(--fontColor);
+  background: rgba(81, 85, 126, 0.6);
 }
-.slide {
-  float: left;
-  height: 100%;
-  width: 0;
-  transition: width 0.3s linear;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-}
+
 .slide > * {
   transition: transform 0.15s linear;
   transform: scale(0);
+  background: rgba(81, 85, 126, 0.6);
 }
 .labels {
   position: absolute;
@@ -50,7 +52,7 @@
   height: 15px;
   border-radius: 15px;
   margin: 0.5vmin 2vmin;
-  border: 3px solid white;
+  border: 3px solid var(--fontColor);
 }
 .carousel .one,
 .carousel .two,
@@ -94,20 +96,7 @@
 #slide-btn-3:checked ~ .labels label[for="slide-btn-3"],
 #slide-btn-4:checked ~ .labels label[for="slide-btn-4"],
 #slide-btn-5:checked ~ .labels label[for="slide-btn-5"] {
-  background-color: white;
-}
-.credit {
-  text-align: center;
-  color: #fff;
-  margin-top: 10px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-
-.credit a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+  background-color: var(--quertiaryColor);
 }
 
 @media (width < 1080px) {

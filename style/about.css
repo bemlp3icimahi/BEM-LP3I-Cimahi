@@ -11,6 +11,7 @@ body {
 .text::first-letter {
   initial-letter: 2;
   margin-right: 0.3em;
+  color: var(--quertiaryColor);
 }
 
 .about-section {
@@ -27,13 +28,13 @@ body {
 .about-section .content-column .inner-column {
   position: relative;
   padding-top: 50px;
-  padding-right: 100px;
 }
 
 .about-section .content-column .text {
   position: relative;
   color: var(--fontColor);
   font-size: 15px;
+  font-weight: bold;
   line-height: 2em;
   margin-bottom: 40px;
 }
@@ -62,7 +63,7 @@ body {
   right: 0px;
   top: 0px;
   left: 40px;
-  bottom: 100px;
+  bottom: 80px;
   z-index: 0;
   border: 2px solid var(--quertiaryColor);
 }
@@ -121,9 +122,6 @@ body {
   border: 2px solid var(--quertiaryColor);
   font-family: "Ubuntu", sans-serif;
 }
-.sec-title2 {
-  color: #fff;
-}
 .sec-title {
   position: relative;
 }
@@ -150,7 +148,6 @@ body {
   .about-section .content-column .inner-column {
     position: relative;
     padding-top: 10px;
-    margin-left: 3vw;
   }
 
   .about-section .image-column .inner-column:after {
@@ -159,7 +156,7 @@ body {
     right: 0px;
     top: 0px;
     left: 40px;
-    bottom: 100px;
+    bottom: 70px;
     padding-bottom: 300px;
     z-index: 0;
     border: 2px solid var(--quertiaryColor);
@@ -177,21 +174,25 @@ body {
     margin-left: 10vw;
     content: "";
     width: 75%;
-    height: 120%;
+    height: 100%;
     z-index: 0;
     border: 2px solid var(--quertiaryColor);
-    padding-bottom: 30em;
-    opacity: 0.4;
+    padding-bottom: 65vw;
+    opacity: 0.2;
   }
 
-  .image > img {
-    opacity: 0.4;
-    margin-left: 4vw;
-    height: 500px;
+  .about-section .image-column .inner-column .image img {
+    margin-left: 10vw;
+    content: "";
+    width: 75%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.2;
   }
 
   .about-section {
     position: relative;
+    margin-bottom: 4.5em;
   }
 
   .about-section .image-column {
@@ -207,5 +208,28 @@ body {
   .about-section .image-column .inner-column .image .overlay-box {
     position: absolute;
     margin-left: 20vw;
+  }
+}
+
+@media (width < 568px) {
+  .about-section .image-column .inner-column::after {
+    position: absolute;
+    margin-left: 10vw;
+    content: "";
+    width: 75%;
+    height: 100%;
+    z-index: 0;
+    border: 2px solid var(--quertiaryColor);
+    padding-bottom: 75vw;
+    opacity: 0.2;
+  }
+
+  .about-section .image-column .inner-column .image img {
+    margin-left: 10vw;
+    content: "";
+    width: 90%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.2;
   }
 }

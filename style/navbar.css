@@ -5,10 +5,51 @@
   font-family: "Ubuntu", sans-serif;
 }
 
+div.offcanvas-header {
+  color: var(--quertiaryColor);
+}
+
 .navbar-expand-lg {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--primaryColor);
 }
 
 #offcanvasNavbar {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--primaryColor);
+}
+
+a.navbar-brand,
+div.offcanvas-body ul li a {
+  color: var(--quertiaryColor);
+  position: relative;
+  text-decoration: none;
+}
+div.offcanvas-body ul li a:hover {
+  color: var(--quertiaryColor);
+}
+
+div.offcanvas-body ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--quertiaryColor);
+  transition: width 0.3s ease-in-out;
+}
+
+div.offcanvas-body ul li a:hover::before {
+  color: var(--quertiaryColor);
+  width: 100%;
+}
+
+button.navbar-toggler {
+  border: 2px solid #d7a449;
+}
+
+ul.dropdown-menu {
+  background-color: var(--primaryColor);
+}
+ul.dropdown-menu li a:hover {
+  background-color: var(--primaryColor);
 }

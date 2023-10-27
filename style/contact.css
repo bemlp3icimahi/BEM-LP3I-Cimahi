@@ -6,23 +6,22 @@ body {
   background-color: var(--primaryColor);
 }
 
-input,
-textarea,
 span {
   font-family: "Ubuntu", sans-serif;
   background-color: transparent;
+}
+
+::placeholder {
+  font-family: "Ubuntu", sans-serif;
+  color: var(--quertiaryColor);
 }
 
 .contact-form {
   background-color: var(--secondaryColor);
 }
 
-button {
-  background-color: var(--quertieryColor);
-}
-
 .send-button {
-  margin-top: 15px;
+  margin-top: 5px;
   height: 34px;
   overflow: hidden;
   transition: all 0.2s ease-in-out;
@@ -30,9 +29,9 @@ button {
 
 .send-text {
   display: block;
-  margin-top: 10px;
+  margin-top: 8px;
   font: 700 12px "Ubuntu", sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
 }
 
 .alt-send-button:hover {
@@ -42,9 +41,8 @@ button {
 .alt-send-button {
   height: 34px;
   transition: all 0.2s ease-in-out;
+  color: var(--primaryColor);
 }
-
-/* Location, Phone, Email Section */
 
 .contact {
   line-height: 4;
@@ -64,10 +62,6 @@ button {
 
 .contact-text a:hover {
   text-decoration: underline;
-}
-
-hr {
-  border-color: rgba(255, 255, 255, 0.6);
 }
 
 /* Begin Media Queries*/
