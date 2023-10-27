@@ -14,7 +14,8 @@ div.offcanvas-header {
 }
 
 #offcanvasNavbar {
-  background-color: var(--primaryColor);
+  background-color: #1b2430e1;
+  width: 50vw;
 }
 
 a.navbar-brand,
