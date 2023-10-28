@@ -70,7 +70,7 @@ ul.footer-links li a {
   transition: all 0.2s linear;
 }
 
-.site-footer a:hover {
+.footer-links a:hover {
   color: var(--quertiaryColor);
   text-decoration: none;
   font-style: italic;

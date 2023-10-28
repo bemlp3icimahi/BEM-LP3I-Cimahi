@@ -5,7 +5,7 @@
 div.modal-content,
 div.card-body {
   text-align: center;
-  animation: scaleIn 0.5s;
+  animation: scaleIn 0.5s ease-in-out;
   transform-origin: left;
   background-color: var(--secondaryColor);
   color: var(--fontColor);
@@ -53,5 +53,16 @@ div.card-body {
   }
   100% {
     transform: scaleX(1);
+  }
+}
+
+@media (width < 768px) {
+  @keyframes scaleIn {
+    0% {
+      transform: scaleY(0);
+    }
+    100% {
+      transform: scaleY(1);
+    }
   }
 }

@@ -20,9 +20,11 @@ div.offcanvas-header {
 a.navbar-brand,
 div.offcanvas-body ul li a {
   color: var(--quertiaryColor);
+  font-weight: bold;
   position: relative;
   text-decoration: none;
 }
+
 div.offcanvas-body ul li a:hover {
   color: var(--quertiaryColor);
 }

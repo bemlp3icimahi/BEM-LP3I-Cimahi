@@ -1,0 +1,148 @@
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  --primaryColor: #1b2430;
+  --secondaryColor: #51557e;
+  --tertiaryColor: #816797;
+  --quertiaryColor: #d7a449;
+  --fontColor: #d6d5a8;
+}
+
+/* Container styles */
+.background {
+  background-color: var(--primaryColor);
+}
+
+/* Kolase */
+
+.imageCollage {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.imageCollage_text {
+  padding: 20px;
+  background: #816797;
+  font-size: 1.5rem;
+  border: 2px solid #1b2430;
+  color: var(--fontColor);
+  width: 300px;
+}
+
+.imageCollage img {
+  height: 250px;
+  flex-grow: 1;
+  object-fit: cover;
+  border: 2px solid #1b2430;
+}
+
+/* Tentang kami styles */
+div.card.border-0 {
+  width: 10em;
+}
+
+div.col-3 {
+  margin: 5px;
+}
+
+span.post,
+h3.title {
+  color: var(--fontColor);
+  margin: 0;
+}
+
+.our-team {
+  color: var(--fontColor);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*  */
+.container.container-2 h1 {
+  font-size: 2em;
+  text-align: left;
+  color: var(--quertiaryColor);
+}
+
+.container.container-2 h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+  color: var(--quertiaryColor);
+}
+
+.container.container-2 p {
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--fontColor);
+  text-align: justify;
+}
+
+a.link-aside {
+  font-size: 0.7em;
+  font-weight: 600;
+  margin-right: 20px;
+  color: var(--quertiaryColor);
+  line-height: 0;
+}
+
+a.link-aside:hover {
+  text-decoration: underline;
+}
+
+.featured-aside {
+  display: flex;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px 0px 0px 0px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: var(--secondaryColor);
+}
+
+.featured-aside img {
+  width: 100px;
+  height: 80px;
+}
+
+/* Gaya Responsif */
+@media (max-width: 1000px) {
+  .imageCollage_text {
+    padding: 20px;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  img.two,
+  img.three {
+    display: none;
+  }
+}
+
+@media (width < 768px) {
+  div.card.border-0 {
+    width: 8em;
+  }
+  div.col-3 {
+    margin: 5px;
+  }
+}
+
+@media (width < 560px) {
+  div.card.border-0 {
+    width: 6em;
+  }
+
+  h3.title {
+    font-size: 1em;
+  }
+
+  span.post {
+    font-size: 0.7em;
+  }
+}
