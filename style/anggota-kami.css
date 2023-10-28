@@ -1,7 +1,7 @@
 .container-grid {
   position: relative;
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 3em 1em;
   height: 800px;
   transition: all 1000ms;
@@ -67,10 +67,6 @@
   transform: translateY(-16px);
 }
 
-.box:nth-child(even) {
-  transform: translateY(0px);
-}
-
 .box::after {
   content: attr(data-text);
   position: absolute;
@@ -97,7 +93,7 @@
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 3em 1em;
-    height: 800px;
+    height: 1000px;
     transition: all 1000ms;
   }
   .container-grid:has(.box-1:hover) {
