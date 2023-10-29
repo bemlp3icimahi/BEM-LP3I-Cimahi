@@ -22,6 +22,7 @@
 
     <!-- style.css -->
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/contact.css" />
 
     <title>BEM LP3I CIMAHI</title>
   </head>
@@ -38,7 +39,7 @@
       <div class="owl-carousel center">
         <a class="item" href="#">
           <div class="image-container">
-            <img src="1.jpg" />
+            <img class="img-kolom" src="assets/gambar1.jpg" />
             <div class="overlay">
               <div class="overlay-content">Text 7</div>
             </div>
@@ -46,7 +47,7 @@
         </a>
         <a class="item" href="#">
           <div class="image-container">
-            <img src="1.jpg" />
+            <img class="img-kolom" src="assets/gambar2.jpg" />
             <div class="overlay">
               <div class="overlay-content">Text 7</div>
             </div>
@@ -54,7 +55,7 @@
         </a>
         <a class="item" href="#">
           <div class="image-container">
-            <img src="1.jpg" />
+            <img class="img-kolom" src="assets/gambar3.jpg" />
             <div class="overlay">
               <div class="overlay-content">Text 7</div>
             </div>
@@ -69,7 +70,102 @@
     <!--  -->
     <div id="ukm-section"></div>
     <!--  -->
-    <div id="contact-section"></div>
+    <!-- <div id="contact-section"></div> -->
+    <section id="contact" class="mb-5">
+      <h2 class="container text-center mt-5 mb-5">CONTACT US</h2>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="contact-form shadow p-3 rounded">
+              <form
+                name="bem-contact-form"
+                id="contact-form"
+                class="form-horizontal text-center"
+                role="form">
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      placeholder="NAME"
+                      name="name"
+                      value=""
+                      style="
+                        background: transparent;
+                        color: #d7a449;
+                        font-weight: bold;
+                        border: 1px solid#d7a449;
+                      "
+                      required />
+                  </div>
+                </div>
+
+                <textarea
+                  class="form-control mt-1"
+                  rows="12"
+                  placeholder="MESSAGE"
+                  name="message"
+                  style="
+                    resize: none;
+                    background: transparent;
+                    color: #d7a449;
+                    font-weight: bold;
+                    border: 1px solid#d7a449;
+                  "
+                  required></textarea>
+
+                <button
+                  class="form-control btn send-button"
+                  id="submit"
+                  type="submit"
+                  value="SEND"
+                  style="background-color: #d7a449">
+                  <div class="alt-send-button">
+                    <i class="fa fa-paper-plane"></i>
+                    <p class="send-text">SEND</p>
+                  </div>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-12">
+            <div class="direct-contact-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15844.602770083697!2d107.5470311!3d-6.8725409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e58c6fd4aee1%3A0x2e90dd3f6fb585d2!2sPoliteknik%20LP3I%20Kampus%20Cimahi!5e0!3m2!1sid!2sid!4v1698290258427!5m2!1sid!2sid"
+                class="border border-primary"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen></iframe>
+
+              <hr style="border: 1px solid #d7a449" />
+
+              <div class="contact">
+                <i class="fa fa-map-marker"
+                  ><span class="contact-text place">
+                    Jl. Terusan No.14 A, Cimahi, Kec. Cimahi Tengah, Kota
+                    Cimahi, Jawa Barat 40525</span
+                  ></i
+                >
+
+                <i class="fa fa-envelope">
+                  <span class="contact-text gmail">
+                    <a href="mailto:bemlp3icimahi@gmail.com">
+                      bemlp3icimahi@gmail.com
+                    </a>
+                  </span>
+                </i>
+              </div>
+
+              <hr style="border: 1px solid #d7a449" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--  -->
     <div id="footer-section"></div>
     <!--  -->
@@ -86,7 +182,6 @@
     <script type="text/javascript" src="script/about.js"></script>
     <script type="text/javascript" src="script/anggota.js"></script>
     <script type="text/javascript" src="script/ukm.js"></script>
-    <script type="text/javascript" src="script/contact.js"></script>
     <script type="text/javascript" src="script/footer.js"></script>
   </body>
 </html>

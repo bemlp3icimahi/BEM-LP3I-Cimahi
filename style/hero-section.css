@@ -37,7 +37,6 @@
 .slide > * {
   transition: transform 0.15s linear;
   transform: scale(0);
-  background: rgba(81, 85, 126, 0.6);
 }
 .labels {
   position: absolute;
@@ -62,21 +61,7 @@
   background-position: center center;
   background-size: cover;
 }
-.carousel .one {
-  background-image: url(https://cdn.pixabay.com/photo/2016/10/14/19/21/canyon-1740973__340.jpg);
-}
-.carousel .two {
-  background-image: url(https://cdn.pixabay.com/photo/2018/05/30/00/24/thunderstorm-3440450__340.jpg);
-}
-.carousel .three {
-  background-image: url(https://cdn.pixabay.com/photo/2016/08/09/21/54/lake-1581879__340.jpg);
-}
-.carousel .four {
-  background-image: url(https://cdn.pixabay.com/photo/2021/09/20/21/32/lake-6641880__340.jpg);
-}
-.carousel .five {
-  background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg);
-}
+
 #slide-btn-1:checked ~ .one,
 #slide-btn-2:checked ~ .two,
 #slide-btn-3:checked ~ .three,
