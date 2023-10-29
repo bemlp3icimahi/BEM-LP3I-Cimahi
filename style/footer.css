@@ -34,11 +34,6 @@ ul.footer-links li a {
   list-style: none;
 }
 
-.footer-links a,
-.social-icons a {
-  color: #737373;
-}
-
 .site-footer .social-icons {
   text-align: right;
 }
