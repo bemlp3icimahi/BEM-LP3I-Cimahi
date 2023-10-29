@@ -65,24 +65,39 @@ $(document).ready(function () {
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbwubgskjFfBebxvcuERk9E7xTuE_QjbrlBzP7Z48WAkn_18180NJILDb2bpXki2EKiF/exec";
 const form = document.forms["bem-contact-form"];
+const load = document.querySelector(".spinner-border");
+const sendText = document.querySelector(".send-text");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  load.classList.toggle("d-none");
+  sendText.classList.toggle("d-none");
+
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
       if (response.status === 200) {
         // Pesan berhasil dikirim
+        load.classList.toggle("d-none");
+        sendText.classList.toggle("d-none");
         form.reset();
         showAlert("Pesan berhasil dikirim!", "#1b2430", "#d7a449");
       } else {
         // Pesan gagal dikirim
-        showAlert("Pesan gagal dikirim.", "#1b2430", "#d7a449");
+        showAlert(
+          "Pesan gagal dikirim. Silahkan coba lain waktu!",
+          "#1b2430",
+          "#d7a449"
+        );
       }
     })
     .catch((error) => {
       console.error("Error!", error.message);
       // Pesan gagal dikirim
-      showAlert("Pesan gagal dikirim.", "#1b2430", "#d7a449");
+      showAlert(
+        "Pesan gagal dikirim. Silahkan coba lain waktu!",
+        "#1b2430",
+        "#d7a449"
+      );
     });
 });
 

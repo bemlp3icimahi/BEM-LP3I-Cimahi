@@ -11,7 +11,7 @@ span {
   background-color: transparent;
 }
 
-::placeholder {
+input::placeholder {
   font-family: "Ubuntu", sans-serif;
   color: var(--quertiaryColor);
 }
@@ -22,25 +22,16 @@ span {
 
 .send-button {
   margin-top: 5px;
-  height: 34px;
-  overflow: hidden;
-  transition: all 0.2s ease-in-out;
 }
 
 .send-text {
-  display: block;
-  margin-top: 8px;
-  font: 700 12px "Ubuntu", sans-serif;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  font: 700 1em "Ubuntu", sans-serif;
   letter-spacing: 5px;
 }
 
-.alt-send-button:hover {
-  transform: translate3d(0px, -29px, 0px);
-}
-
 .alt-send-button {
-  height: 34px;
-  transition: all 0.2s ease-in-out;
   color: var(--primaryColor);
 }
 
