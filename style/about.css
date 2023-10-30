@@ -184,7 +184,7 @@ body {
   .about-section .image-column .inner-column .image img {
     margin-left: 10vw;
     content: "";
-    width: 75%;
+    width: 85%;
     height: 100%;
     z-index: 0;
     opacity: 0.2;
@@ -225,9 +225,9 @@ body {
   }
 
   .about-section .image-column .inner-column .image img {
-    margin-left: 10vw;
+    margin-left: 3vw;
     content: "";
-    width: 90%;
+    width: 110%;
     height: 100%;
     z-index: 0;
     opacity: 0.2;

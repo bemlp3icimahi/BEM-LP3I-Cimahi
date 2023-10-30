@@ -42,6 +42,7 @@ h2:after {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 10px #000000fa;
 }
 
 .container-grid .box:hover {

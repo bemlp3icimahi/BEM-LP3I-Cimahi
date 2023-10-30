@@ -29,6 +29,7 @@ h2.judul {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0px 0px 10px #000000fa;
 }
 
 .container-grid .box:hover {
@@ -140,7 +141,7 @@ ul.social-media {
   transform: translateY(0);
   opacity: 1;
   transition-delay: 400ms;
-  box-shadow: 2px 2px 2px #51557e;
+  box-shadow: 0px 2px 2px #51557e;
   cursor: pointer;
 }
 
@@ -174,7 +175,7 @@ ul.social-media {
     content: attr(data-text);
     position: absolute;
     text-align: center;
-    bottom: 100px;
+    bottom: 30px;
     background-color: #816797;
     color: #d6d5a8;
     padding: 5px 5px 5px 10px;
