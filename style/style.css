@@ -48,7 +48,7 @@ body {
   width: 100%;
 }
 
-div.overlay {
+/* div.overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -81,7 +81,7 @@ div.overlay-content {
 .item:hover img {
   transition: transform 0.4s ease-in-out;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+} */
 
 /* contact */
 .custom-alert {
