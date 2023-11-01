@@ -14,7 +14,7 @@ h2.judul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 3em 1em;
-  height: 800px;
+  height: 1000px;
   transition: all 1000ms;
   margin-top: 50px;
 }
@@ -173,7 +173,7 @@ ul.social-media {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 3em 1em;
-    height: 1000px;
+    height: 1400px;
     transition: all 1000ms;
   }
 

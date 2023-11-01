@@ -140,9 +140,14 @@ a.btn:hover {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 3em 1em;
-    height: 1000px;
+    height: 1200px;
     transition: all 1000ms;
   }
+
+  .box::after {
+    font-size: 0.7em;
+  }
+
   .container-grid:has(.box-1:hover) {
     grid-template-columns: auto auto auto;
   }
