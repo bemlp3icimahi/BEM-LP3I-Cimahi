@@ -96,6 +96,9 @@ h2:after {
   bottom: 20px;
   background-color: #816797;
   color: #d6d5a8;
+  outline: 2px solid var(--primaryColor);
+  outline-offset: -0.3em;
+  font-weight: bold;
   padding: 10px 10px 10px 14px;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -108,6 +111,27 @@ h2:after {
   transform: translateY(0);
   opacity: 1;
   transition-delay: 400ms;
+}
+
+a.btn {
+  position: relative;
+  color: var(--quertiaryColor);
+  background: var(--primaryColor);
+  font-size: 1em;
+  font-weight: 700;
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-transform: capitalize;
+  border: 2px solid var(--quertiaryColor);
+  font-family: "Ubuntu", sans-serif;
+}
+
+a.btn:hover {
+  color: var(--primaryColor);
+  background: var(--quertiaryColor);
+  outline: 2px solid var(--primaryColor);
+  outline-offset: -0.3em;
+  border: 2px solid var(--quertiaryColor);
 }
 
 @media (width < 768px) {

@@ -16,6 +16,11 @@ input::placeholder {
   color: var(--quertiaryColor);
 }
 
+input,
+textarea {
+  letter-spacing: 0.1em;
+}
+
 .contact-form {
   background-color: var(--secondaryColor);
 }
@@ -28,7 +33,7 @@ input::placeholder {
   margin-top: 0.1em;
   margin-bottom: 0.1em;
   font: 700 1em "Ubuntu", sans-serif;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
 }
 
 .alt-send-button {
