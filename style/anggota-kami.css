@@ -37,43 +37,63 @@ h2.judul {
 }
 
 .container-grid:has(.box-1:hover) {
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container-grid:has(.box-2:hover) {
-  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container-grid:has(.box-3:hover) {
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container-grid:has(.box-4:hover) {
-  grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container-grid:has(.box-5:hover) {
-  grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container-grid:has(.box-6:hover) {
-  grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container-grid:has(.box-7:hover) {
-  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container-grid:has(.box-8:hover) {
-  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container-grid:has(.box-9:hover) {
-  grid-template-columns: 1fr 1fr 1fr 3fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .container-grid:has(.box-10:hover) {
-  grid-template-columns: 1fr 1fr 1fr 1fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container-grid:has(.box-11:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container-grid:has(.box-12:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container-grid:has(.box-13:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container-grid:has(.box-14:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.container-grid:has(.box-15:hover) {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .box:nth-child(odd) {
@@ -207,6 +227,7 @@ ul.social-media {
   .container-grid:has(.box-5:hover) {
     grid-template-columns: auto auto auto;
   }
+
   .container-grid:has(.box-6:hover) {
     grid-template-columns: auto auto auto;
   }
@@ -224,6 +245,25 @@ ul.social-media {
   }
 
   .container-grid:has(.box-10:hover) {
+    grid-template-columns: auto auto auto;
+  }
+  .container-grid:has(.box-11:hover) {
+    grid-template-columns: auto auto auto;
+  }
+
+  .container-grid:has(.box-12:hover) {
+    grid-template-columns: auto auto auto;
+  }
+
+  .container-grid:has(.box-13:hover) {
+    grid-template-columns: auto auto auto;
+  }
+
+  .container-grid:has(.box-14:hover) {
+    grid-template-columns: auto auto auto;
+  }
+
+  .container-grid:has(.box-15:hover) {
     grid-template-columns: auto auto auto;
   }
 }
