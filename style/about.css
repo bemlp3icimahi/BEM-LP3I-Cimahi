@@ -74,16 +74,6 @@ body {
   z-index: 1;
 }
 
-.about-section .image-column .inner-column .image:before {
-  position: absolute;
-  content: "";
-  left: -50px;
-  bottom: -50px;
-  width: 299px;
-  height: 299px;
-  background: url(img/pattern-2.png) no-repeat;
-}
-
 .about-section .image-column .inner-column .image img {
   position: relative;
   width: 100%;
@@ -96,33 +86,24 @@ body {
   bottom: 48px;
 }
 
-.about-section .btn-style-three:before {
-  position: absolute;
-  content: "";
-  left: 10px;
-  top: 10px;
-  z-index: -1;
-  right: -10px;
-  bottom: -10px;
-  background: url(https://i.ibb.co/DKn55Qz/pattern-1.jpg) repeat;
-}
-.about-section .btn-style-three:hover {
-  color: var(--primaryColor);
-  background: var(--quertiaryColor);
-}
 .about-section .btn-style-three {
   position: relative;
-  line-height: 24px;
   color: var(--quertiaryColor);
-  font-size: 15px;
+  background: var(--primaryColor);
+  font-size: 1em;
   font-weight: 700;
-  background: none;
   display: inline-block;
-  padding: 11px 40px;
+  padding: 0.5em 1em;
   text-transform: capitalize;
   border: 2px solid var(--quertiaryColor);
   font-family: "Ubuntu", sans-serif;
 }
+
+.about-section .btn-style-three:hover {
+  color: var(--primaryColor);
+  background: var(--quertiaryColor);
+}
+
 .sec-title {
   position: relative;
 }
