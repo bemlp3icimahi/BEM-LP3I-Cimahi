@@ -33,7 +33,7 @@ body {
 .about-section .content-column .text {
   position: relative;
   color: var(--fontColor);
-  font-size: 15px;
+  font-size: 1em;
   font-weight: bold;
   line-height: 2em;
   margin-bottom: 40px;
@@ -164,6 +164,11 @@ body {
 }
 
 @media (width < 768px) {
+  .about-section .content-column .text {
+    font-size: 0.8em;
+    line-height: 1.8em;
+  }
+
   .about-section {
     position: relative;
     padding: 2em 0px;

@@ -33,7 +33,7 @@
   justify-content: center;
   text-align: center;
   width: 100vw;
-  height: 500px;
+  height: 75vh;
   font-size: 4em;
   font-family: "Ubuntu", sans-serif;
   color: var(--fontColor);
@@ -110,7 +110,7 @@
     justify-content: center;
     text-align: center;
     width: 100vw;
-    height: 400px;
+    height: 60vh;
     font-size: 2em;
     font-family: "Ubuntu", sans-serif;
     color: var(--fontColor);
