@@ -37,6 +37,7 @@ body {
   font-weight: bold;
   line-height: 2em;
   margin-bottom: 40px;
+  text-align: justify;
 }
 
 .about-section .content-column .email {
